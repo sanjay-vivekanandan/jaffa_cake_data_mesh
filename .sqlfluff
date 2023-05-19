@@ -6,7 +6,8 @@ exclude_rules = L016,L031,L034
 large_file_skip_byte_limit = 25000
 
 [sqlfluff:templater:dbt]
-project_dir = ./
+project_dir = ./models/core_data_eng/
+profile_dir = ./models/core_data_eng/
 
 # Comma separated list of rules to exclude, or None
 # See https://docs.sqlfluff.com/en/stable/configuration.html#enabling-and-disabling-rules
