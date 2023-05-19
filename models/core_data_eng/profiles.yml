@@ -1,4 +1,4 @@
- demo_jaffle_shop:
+ core_data_eng:
   target: dev
   outputs:
     dev:
