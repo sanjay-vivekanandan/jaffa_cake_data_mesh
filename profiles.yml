@@ -1,0 +1,18 @@
+ demo_jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: currencycloud.eu-west-1
+      user: "sanjay.vivekanandan@currencycloud.com"
+      role: DATA_LOADER
+
+      # Keypair config
+      private_key_path: "/Users/sanjay.vivekanandan/.ssh/snowflake/rsa_key.p8"
+
+      database: 'PLAYGROUND'
+      warehouse: ELT
+      schema: dbt_svivekan
+      threads: 5
+      client_session_keep_alive: True
+      query_tag: dbt-svivekan
