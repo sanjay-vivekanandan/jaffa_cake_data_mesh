@@ -5,9 +5,13 @@ templater = dbt
 exclude_rules = L016,L031,L034
 large_file_skip_byte_limit = 25000
 
+# We need to explicitly set the dbt project & profiles directory
+# if they are not the default settings
+# note in this instance the profiles_dir is set to the default location
+# of ~/.dbt
+# Refer to https://docs.sqlfluff.com/en/stable/configuration.html#installation-configuration
 [sqlfluff:templater:dbt]
 project_dir = ./models/core_data_eng/
-#profile_dir = ./
 
 # Comma separated list of rules to exclude, or None
 # See https://docs.sqlfluff.com/en/stable/configuration.html#enabling-and-disabling-rules
