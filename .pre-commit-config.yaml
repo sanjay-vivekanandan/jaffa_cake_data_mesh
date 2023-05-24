@@ -21,3 +21,8 @@ repos:
           'sqlfluff-templater-dbt==2.0.7'
         ]
 
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.32.0
+    hooks:
+      - id: yamllint
+        args: [-c=.yamllint]
