@@ -3,7 +3,8 @@ name: 'core_data_eng'
 config-version: 2
 version: '0.1'
 
-profile: 'core_data_eng'
+# profile: 'core_data_eng'
+profile: 'dbt_local_development'
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
