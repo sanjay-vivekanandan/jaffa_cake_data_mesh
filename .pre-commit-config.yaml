@@ -26,3 +26,14 @@ repos:
     hooks:
       - id: yamllint
         args: [-c=.yamllint]
+
+  - repo: https://github.com/Montreal-Analytics/dbt-gloss
+    rev: 1.0.1
+    hooks:
+      - id: dbt-docs-generate
+      - id: check-source-table-has-description
+      - id: check-model-columns-have-desc
+      - id: check-model-has-all-columns
+      - id: check-model-has-tests
+        args: ["--test-cnt", "2", "--"]
+
